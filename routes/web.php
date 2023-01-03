@@ -39,15 +39,18 @@ Route::get('/homepage', function () {
 // });
 Route::get('/register', [UserController::class, 'show'])->name('show');
 
-Route::post('/register/homepage', [UserController::class, 'simpandata'])->name('simpandata');
+Route::post('/register', [UserController::class, 'simpandata'])->name('simpandata');
 
-Route::get('/login', [LoginController::class, 'login'])->name('login');
-
-Route::post('/login/homepage', [UserController::class, 'panggildata'])->name('panggildata');
+Route::get('/login', [LoginController::class, 'login']);
+Route::post('/login', [LoginController::class, 'dologin']);
 
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/homepage', [UserController::class, 'homepage']);
+Route::get('/profil', [UserController::class, 'profil']);
+Route::get('/logout', [UserController::class, 'logout']);
 
 // Route::get('/navbarsudahlogin', function () {
 //     return view('navbarsudahlogin');
@@ -69,7 +72,9 @@ Route::get('/about', function () {
 // });
 
 Route::get('/searchpage', [PostController::class, 'index'])->middleware('auth');
+Route::get('/searchpage/{perangkat}', [PostController::class, 'downloadfunc']);
+
 
 Route::get('/posts', [FormPostController::class, 'create'])->name('create')->middleware('auth');
 
-Route::post('/post', [FormPostController::class, 'store'])->name('store')->middleware('auth');
+Route::post('/posts', [FormPostController::class, 'store']);

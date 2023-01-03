@@ -23,7 +23,7 @@
                     <div class="d-flex align-items-start">
                         <div class="w-100 ms-3">
                             <h1 class="text-center">Hai,</h1>
-                            <h3 class="text-center my-0" style="padding-bottom: 2%;">{{json_encode($users)}}</h3>
+                            <h3 class="text-center my-0" style="padding-bottom: 2%;">{{$user->name}}</h3>
                             <p class="text-center text-muted"></p>
                         </div>
                     </div>
@@ -36,7 +36,7 @@
                         <a href="/" class="list-group-item list-group-item-action">
                             <div class="d-flex align-items-center pb-1" id="tooltips-container">
                                 <div class="w-100 ms-2">
-                                    <h4 class="mb-1">LOGOUT</h4>
+                                <h4 href="/logout" class="mb-1">LOGOUT</h4>
                                 </div>
                                 <i class="mdi mdi-chevron-right h2"></i>
                             </div>

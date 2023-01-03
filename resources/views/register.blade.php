@@ -33,7 +33,7 @@
                     @csrf
                     <div class="form-floating">
                         <input type="text" class="form-control rounded-top" name="name" id="name" required
-                            value="{{ old('name') }}" placeholder="Name">
+                             placeholder="Name">
                         <label for="name">Username</label>
                     </div>
                     <div class="form-floating" style="margin-top: 2%">

@@ -65,7 +65,7 @@
             <a style="text-decoration:none" href="berilmucompany@gmail.com">
                 <img src="img/gmail.png" alt="" width="40px">
             </a>
-            <a style="text-decoration:none" href="https://www.instagram.com/berilmu_sahabatberbagi/">
+            <a style="text-decoration:none" href="#">
                 <img src="img/instagram.png" alt="" width="30px">
             </a>
         </div>

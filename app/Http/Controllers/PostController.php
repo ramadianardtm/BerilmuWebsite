@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Http\Requests\StorepostRequest;
 use App\Http\Requests\UpdatepostRequest;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -24,8 +25,8 @@ class PostController extends Controller
         // if (request('search')){
         //     $posts->where('title', 'like', '%' . request('search') . '%');
         // }
-
-        $posts = Post::where('title', 'LIKE', '%' . $Keyword . '%')
+        
+        $posts = Post::where('judul', 'LIKE', '%' . $Keyword . '%')
                 // ->orwhere('category', 'LIKE', '%' . $Keyword . '%')             
                 ->paginate(6);
         
@@ -37,6 +38,12 @@ class PostController extends Controller
         // ]);
     }
     
+    public function downloadfunc(Request $request, $perangkat)
+    {
+       return response()->download(public_path('storage/'.'perangkat'.$perangkat));
+       
+    }
+
     /**
      * Show the form for creating a new resource.
      *

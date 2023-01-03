@@ -38,14 +38,13 @@
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
             <!-- Team Thumb-->
-            <div class="advisor_thumb"><img src="img/Fitri.png" alt="" style="width:120%; border-radius:10px 10px 0 0;">
+            <div class="advisor_thumb"><img src="img/Farah.png" alt="" style="width:120%; border-radius:10px 10px 0 0;">
               <!-- Social Info-->
-              <div class="social-info"><a href="https://www.instagram.com/fitrifasol/"><i class="fa fa-instagram"></i></a><a href="mailto:fitri02farida@gmai.com"><i class="fa fa-google"></i></a></div>
+              <div class="social-info"><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-google"></i></a></div>
             </div>
             <!-- Team Details-->
             <div class="single_advisor_details_info">
-              <h6>Fitri Farida Solihati</h6>
-              <h9>2103753</h9>
+              <h6>Farah</h6>
             </div>
           </div>
         </div>
@@ -53,14 +52,13 @@
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
             <!-- Team Thumb-->
-            <div class="advisor_thumb"><img src="img/niki.jpeg" alt="" style="width:120%; border-radius:10px 10px 0 0;">
+            <div class="advisor_thumb"><img src="img/Najwa.jpeg" alt="" style="width:120%; border-radius:10px 10px 0 0;">
               <!-- Social Info-->
-              <div class="social-info"><a href="https://www.instagram.com/nikita_marsya9603/"><i class="fa fa-instagram"></i></a><a href="mailto:nikitamarsya50@gmail.com"><i class="fa fa-google"></i></a></div>
+              <div class="social-info"><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-google"></i></a></div>
             </div>
             <!-- Team Details-->
             <div class="single_advisor_details_info">
-              <h6>Nikita Marsya Devana S</h6>
-              <h9>2102423</h9>
+              <h6>Najwa</h6>
           </div>
           </div>
         </div>
@@ -68,14 +66,13 @@
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
             <!-- Team Thumb-->
-            <div class="advisor_thumb"><img src="img/Reisa.jpg" alt="" style="width:120%; border-radius:10px 10px 0 0;">
+            <div class="advisor_thumb"><img src="img/Riria.jpg" alt="" style="width:120%; border-radius:10px 10px 0 0;">
               <!-- Social Info-->
-              <div class="social-info"><a href="https://www.instagram.com/reisa257/"><i class="fa fa-instagram"></i></a><a href="mailto:cacachan257@gmail.com"><i class="fa fa-google"></i></a></div>
+              <div class="social-info"><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-google"></i></a></div>
             </div>
             <!-- Team Details-->
             <div class="single_advisor_details_info">
-              <h6>Reisa Aulia Sodikin</h6>
-              <h9>2102423</h9>
+              <h6>Riria</h6>
             </div>
           </div>
         </div>
@@ -83,14 +80,13 @@
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
             <!-- Team Thumb-->
-            <div class="advisor_thumb"><img src="img/Tiara.jpeg" alt="" style="width:120%; border-radius:10px 10px 0 0;">
+            <div class="advisor_thumb"><img src="img/Thania.jpeg" alt="" style="width:120%; border-radius:10px 10px 0 0;">
               <!-- Social Info-->
-              <div class="social-info"><a href="https://www.instagram.com/tiaradewiis/"><i class="fa fa-instagram"></i></a><a href="mailto:tiaradewi3103@gmail.com"><i class="fa fa-google"></i></a></div>
+              <div class="social-info"><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-google"></i></a></div>
             </div>
             <!-- Team Details-->
             <div class="single_advisor_details_info">
-              <h6>Tiara Dewi Ibnatun S</h6>
-              <h9>2100686</h9>
+              <h6>Thania</h6>
             </div>
           </div>
         </div>

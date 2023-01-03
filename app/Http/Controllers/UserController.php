@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\StoreUserRequest;
 use Illuminate\Support\Facades\Session;
 use App\Http\Requests\UpdateUserRequest;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Hash;
 
 
 
@@ -23,7 +25,6 @@ class UserController extends Controller
     {
         $users = user::get('name');
         return view('profil')->with('users', $users);
-    
     }
 
     /**
@@ -55,7 +56,7 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(User $user)
+    public function show()
     {
         return view('register');
     }
@@ -96,40 +97,62 @@ class UserController extends Controller
 
     public function simpandata(Request $request)
     {
-        $user = user::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => $request->password,
-            
+        $request->validate([
+            'name' => 'required|max:255',
+            'email' => ['required', 'email', 'max:255', 'unique:users,email'],
+            'password' => ['required'],
         ]);
+
+        $user = new User();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = bcrypt($request->password);
+        $user->save();
+
+        return redirect('/homepage');
+    }
+
+    public function homepage()
+    {
         return view('homepagesudahlogin');
     }
 
-    public function panggildata(Request $request )
+    public function logout()
     {
-        $user = user::select([
-            'email' => $request->email,
-            'password' => $request->password,
-            
+        Auth::logout();
+        return redirect('/');
+    }
+
+    public function panggildata(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'email' => 'required',
+            'password' => 'required',
         ]);
 
-        if (Auth::Attempt($user)) {
-            return redirect('/homepage');
-        }else{
-            return redirect('login');
+        if ($validator->fails()) {
+            return redirect('/login')->withErrors($validator)->withInput();
         }
 
-        Session::flash('status', 'failed');
-        Session::flash('message', 'login wrong!');
+        $user = User::where('email', $request->email)->first();
 
-        return view('login');
+        auth()->login($user);
+
+        return redirect('/homepage');
+    }
+
+    public function profil()
+    {
+        $user = User::find(Auth::user()->id);
+
+        return view('profil')->with('user', $user);
     }
 
     /*public function login(){
         return view('login');
     }*/
     //  public function panggildata(Request $request){
-      
+
     //      if($user = Auth::attempt([
     //          'email' => ('email'),
     //          'password' => ('password')
